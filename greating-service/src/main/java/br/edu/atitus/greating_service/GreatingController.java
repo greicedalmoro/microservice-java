@@ -1,5 +1,7 @@
 package br.edu.atitus.greating_service;
 import br.edu.atitus.greating_service.configs.GreatingConfig;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +19,7 @@ public class GreatingController {
 //@Value("${greating-service.default-name}")
 //private String Defaultname;
 	
-    
+   //@Autowired
     private final GreatingConfig greatingConfig;
     
     
